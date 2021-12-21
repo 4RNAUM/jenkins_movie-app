@@ -73,4 +73,9 @@ public class MovieController {
         }
       }
 
+      @GetMapping("/test")
+      public String homePage() {
+          return "home";
+      }
+
 }
