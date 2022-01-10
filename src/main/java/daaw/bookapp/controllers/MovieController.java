@@ -46,7 +46,7 @@ public class MovieController {
     //Listar películas donde participa el actor “actor”. La respuesta se da en formato JSON.
     @GetMapping("/actor/{author}")
     public List<Movie> findByAuthor(@PathVariable String author) {
-        return movieRepository.findByTitle(author);
+        return movieRepository.findByAuthor(author);
     }
 
     //Se crea una película nueva en el servidor.
