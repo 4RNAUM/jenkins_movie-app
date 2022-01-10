@@ -74,9 +74,9 @@ public class MovieController {
       }
 
       //Funcion añadida para la comprobacion de la CI del proyecto
-      /*@GetMapping("/test")
+      @GetMapping("/test")
       public String homePage() {
           return "home";
-      }*/
+      }
 
 }
