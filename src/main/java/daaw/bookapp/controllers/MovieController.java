@@ -38,13 +38,13 @@ public class MovieController {
     }
 
     //Mostrar los datos de la película con título “titulo”. La respuesta se da en formato JSON.
-    @GetMapping("/titulo/{titulo}")
+    @GetMapping("/titulo/{title}")
     public List<Movie> findByTitle(@PathVariable String title) {
         return movieRepository.findByTitle(title);
     }
 
     //Listar películas donde participa el actor “actor”. La respuesta se da en formato JSON.
-    @GetMapping("/actor/{actor}")
+    @GetMapping("/actor/{author}")
     public List<Movie> findByAuthor(@PathVariable String author) {
         return movieRepository.findByTitle(author);
     }
